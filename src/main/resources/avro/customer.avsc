@@ -1,0 +1,9 @@
+{
+  "namespace": "cn.edu.neu.demo.ch3.avro",
+  "type": "record",
+  "name": "Customer",
+  "fields": [
+    {"name": "id", "type": "int"},
+    {"name": "name", "type": "string"}
+  ]
+}
