@@ -16,6 +16,7 @@ public class Main {
 
         // 配置Producer属性  47.94.139.116:9092
         Properties kafkaProperties = new Properties();
+        // fixme: 运行时请修改47.94.139.116:9092为自己的kafka broker地址
         kafkaProperties.put("bootstrap.servers", "47.94.139.116:9092");
         kafkaProperties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         kafkaProperties.put("value.serializer", "cn.edu.neu.demo.ch3.customerSerializer.CustomerSerializer");

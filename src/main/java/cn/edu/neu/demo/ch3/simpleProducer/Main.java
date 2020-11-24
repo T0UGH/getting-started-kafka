@@ -9,12 +9,14 @@ import java.util.Properties;
 
 /**
  * 通过kafka客户端，创建生产者并发送消息
+ * 运行时请修改kafka broker地址
  * @author t0ugh
  * */
 public class Main {
     public static void main(String[] args) {
         // 配置属性  47.94.139.116:9092
         Properties kafkaProperties = new Properties();
+        // fixme: 运行时请修改47.94.139.116:9092为自己的kafka broker地址
         kafkaProperties.put("bootstrap.servers", "47.94.139.116:9092");
         kafkaProperties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         kafkaProperties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
